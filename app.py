@@ -18,8 +18,8 @@ def run():
       st.write(' The bankruptcy process begins with a petition filed by the debtor, which is most common, or on behalf of creditors,which is less common.')
       st.write('All of the debtors assets are measured and evaluated, and the assets may be used to repay a portion of outstanding debt.')
       st.subheader('About the Machine Learning Model and Developer')
-      st.markdown('''### Model Algorithm : Random Forest Classifier''')
-      st.markdown('''### Model Accuracy: 94.5746%''')
+      st.markdown('''### Model Algorithm : eXtreme Gradient Boosting Classifier''')
+      st.markdown('''### Model Accuracy: 97.2281%''')
       st.markdown('''## Model Developed by Karan Singh Thakur, Ridhhi Aggarwal''')
       st.markdown('''### contact: kthakur1_be20@thapar.edu, raggarwal1_be20@thapar.edu''')
       
