@@ -45,7 +45,6 @@ jupyterlab-pygments==0.2.2
 kiwisolver==1.4.4
 knnimpute==0.1.0
 lightgbm==4.0.0
-markdown-it-py==3.0.0
 MarkupSafe==2.1.2
 matplotlib==3.7.2
 matplotlib-inline==0.1.6
