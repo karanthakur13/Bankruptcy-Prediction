@@ -103,7 +103,6 @@ soupsieve==2.4.1
 stack-data==0.6.2
 tenacity==8.2.2
 terminado==0.17.1
-threadpoolctl==3.2.0
 tinycss2==1.2.1
 toml==0.10.2
 toolz==0.12.0
