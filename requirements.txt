@@ -93,7 +93,6 @@ qdldl==0.1.7.post0
 requests==2.31.0
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
-scipy==1.11.1
 scs==3.2.3
 seaborn==0.12.2
 Send2Trash==1.8.0
