@@ -1,71 +1,33 @@
 # Bankruptcy Prediction Model
 
-This project implements a bankruptcy prediction model using various machine learning algorithms. The goal is to predict whether a company is at risk of bankruptcy based on financial indicators and other relevant features.
+## Project Overview
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Installation](#installation)
-3. [Data](#data)
-4. [Data Preprocessing](#data-preprocessing)
-5. [Feature Selection](#feature-selection)
-6. [Modeling](#modeling)
-7. [Running the Model](#running-the-model)
-8. [Contact](#contact)
+The Bankruptcy Prediction Model is a data-driven project aimed at predicting whether a company is at risk of bankruptcy or not. Bankruptcy prediction is a crucial task for financial institutions, investors, and creditors to assess the creditworthiness and financial health of a company before making any decisions related to loans, investments, or business partnerships.
 
-## 1. Introduction <a name="introduction"></a>
+In this project, we use a dataset containing financial features of various companies over multiple years. The dataset is divided into five separate files, each representing one year's financial data. Our main objective is to develop a robust bankruptcy prediction model that can accurately classify companies into two categories: "Bankrupt" and "Not Bankrupt."
 
-In this project, we aim to predict bankruptcy risk for companies using various financial indicators. The model is built using a combination of different machine learning algorithms and is evaluated on different datasets spanning five years.
+## Project Workflow
 
-## 2. Installation <a name="installation"></a>
+1. **Data Collection**: The first step is to gather the necessary data for model development. The dataset files (`1year.arff`, `2year.arff`, `3year.arff`, `4year.arff`, and `5year.arff`) are obtained and loaded into the project.
 
-Before running the notebook, please ensure you have the required libraries installed. You can install them using the following commands:
+2. **Data Preprocessing**: Before building the predictive model, we need to preprocess the data to make it suitable for training. This step involves handling missing values, converting data types, and any necessary data transformations.
 
-```
-!pip install fancyimpute
-!pip install scikit-learn
-!pip install impyute
-!pip install missingno
-!pip install imblearn
-!pip install lightgbm
-!pip install xgboost
-!pip install streamlit
-```
+3. **Missing Data Analysis**: We perform an analysis of missing data to understand the extent of missing values in each dataset. This helps us decide on the appropriate data imputation strategy.
 
-## 3. Data <a name="data"></a>
+4. **Data Imputation**: Since missing data can adversely affect the model's performance, we apply data imputation techniques to fill in the missing values. Two common imputation methods, Mean Imputation and k-Nearest Neighbors (k-NN) Imputation, are used in this project.
 
-The data for this project consists of multiple `.arff` files, each representing the financial indicators of companies for a specific year. The data is loaded and organized into five pandas DataFrames corresponding to each year.
+5. **Data Oversampling**: The dataset may suffer from class imbalance, where the number of instances in one class (e.g., "Bankrupt") is significantly lower than the other class ("Not Bankrupt"). To address this issue, we employ the Synthetic Minority Over-sampling Technique (SMOTE) to oversample the minority class and balance the dataset.
 
-## 4. Data Preprocessing <a name="data-preprocessing"></a>
+6. **Model Building and Evaluation**: With the preprocessed and balanced data, we proceed to build the bankruptcy prediction model. We explore several classifiers, including Gaussian Naive Bayes, Logistic Regression, Decision Tree, Random Forest, and Extreme Gradient Boosting (XGB) Classifier. Each model's performance is evaluated using cross-validation to ensure its effectiveness and generalizability.
 
-### 4.1 Missing Data Analysis
-Missing data is analyzed, and rows with missing values are dropped from the dataset to ensure clean data for modeling.
+7. **Web Application**: In addition to the notebook-based analysis, we create a user-friendly web application using Streamlit. The web app allows users to interact with the trained bankruptcy prediction model and make real-time predictions for a company's bankruptcy risk.
 
-### 4.2 Data Imputation
-Missing values are imputed using two methods: mean imputation and k-Nearest Neighbors (k-NN) imputation. The imputed dataframes are then used for further analysis.
+## Contact Information
 
-## 5. Feature Selection <a name="feature-selection"></a>
+- Model Developed by: Karan Singh Thakur, Ridhhi Aggarwal
+- Email: kthakur1_be20@thapar.edu, raggarwal1_be20@thapar.edu
 
-A feature selection technique, Recursive Feature Elimination (RFE), is applied to select the best features for the modeling process.
+For any queries or feedback, please feel free to reach out to us!
 
-## 6. Modeling <a name="modeling"></a>
-
-Several machine learning classifiers are used for bankruptcy prediction. The following classifiers are used:
-- Gaussian Naive Bayes
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- Extreme Gradient Boosting (XGBoost)
-
-The models are evaluated using k-fold cross-validation and metrics such as Accuracy, Precision, and Recall.
-
-## 7. Running the Model <a name="running-the-model"></a>
-
-To run the bankruptcy prediction model, execute the Streamlit app. The app allows you to input the financial indicators for your company and get the prediction of bankruptcy risk.
-
-## 8. Contact <a name="contact"></a>
-
-For any questions or feedback related to this project, please feel free to contact the developers:
-- Karan Singh Thakur: kthakur1_be20@thapar.edu
-- Ridhhi Aggarwal: raggarwal1_be20@thapar.edu
-
-Thank you for using the bankruptcy prediction model!
+---
+This project aims to provide an effective and accessible tool for bankruptcy prediction, offering valuable insights to financial professionals and stakeholders. By combining data analysis, machine learning, and interactive web app development, we strive to make the bankruptcy prediction process more efficient and reliable.
