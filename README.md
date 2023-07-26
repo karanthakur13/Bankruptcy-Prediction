@@ -30,6 +30,5 @@ The project revolves around a dataset containing financial features of various c
 
 This project aims to provide an effective and accessible tool for bankruptcy prediction, offering valuable insights to financial professionals and stakeholders. By combining data analysis, machine learning, and interactive web app development, we strive to make the bankruptcy prediction process more efficient and reliable. The model's predictions can assist financial institutions in making well-informed decisions regarding investments, loans, and partnerships, ultimately reducing the risks associated with bankruptcy.
 
-## Contact Information
 Model Developed by: Karan Singh Thakur, Ridhhi Aggarwal
 Email: kthakur1_be20@thapar.edu, raggarwal1_be20@thapar.edu
